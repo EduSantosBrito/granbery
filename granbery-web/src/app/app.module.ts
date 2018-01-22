@@ -1,18 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
+import { RouterModule, ChildrenOutletContexts  } from '@angular/router';
 import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [
+    ChildrenOutletContexts
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
