@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import {ElementRef, Component, OnInit, HostBinding, Renderer2 } from "@angular/core";
 
 @Component({
     selector: 'menu',
@@ -8,8 +8,18 @@ import { Component, OnInit } from "@angular/core";
 
 export class MenuComponent implements OnInit {
 
-    constructor(){}
+    private valueClick = true;
+    @HostBinding('style.height') height: Number;
 
-    ngOnInit() {}
+    constructor(private render : Renderer2, private element : ElementRef){}
+
+    ngOnInit() {
+        this.height = window.screen.height * 0.8;
+    }
+
+    openMenu() {
+        this.valueClick = !this.valueClick;
+        this.render.addClass(this.element.nativeElement.querySelector("#hamburger"), "zindex-4")
+    }
     
 }

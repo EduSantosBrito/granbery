@@ -1,1 +1,12 @@
-teste
+<div class="hero-image" [style.height]="height + 'px'">
+    <app-hamburger-icon id="hamburger" (notify)="openMenu()"></app-hamburger-icon>
+    <div class="hero-text">
+        <p class="xs-text-1">Granbery Consultoria</p>
+        <p class="xs-text-3">Administração & Sistema de Informação</p>
+    </div>
+</div>
+
+
+<div class="menu" id="menu" [ngClass]="{'active' : valueClick, 'inactive': !valueClick}" [style.height]="height+'px'" >
+
+</div>

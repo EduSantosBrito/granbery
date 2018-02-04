@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/bf-solid/dist/solid.2.10.6.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
