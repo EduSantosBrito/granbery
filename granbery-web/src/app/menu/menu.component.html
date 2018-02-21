@@ -7,6 +7,31 @@
 </div>
 
 
-<div class="menu" id="menu" [ngClass]="{'active' : valueClick, 'inactive': !valueClick}" [style.height]="height+'px'" >
-
+<div class="menu" id="menu" [ngClass]="{'active' : valueClick, 'inactive': !valueClick}" [style.height]="height + 'px'">
+    <ul class="ul-menu" *ngIf="valueClick">
+        <li class="li-menu">
+            <a>
+                <span class="link-span">
+                    <span class="white-row"></span>
+                    <span class="link-title">Home</span>
+                </span>
+            </a>
+        </li>
+        <li class="li-menu">
+            <a>
+                <span class="link-span">
+                    <span class="white-row"></span>
+                    <span class="link-title">Institucional</span>
+                </span>
+            </a>
+        </li>
+        <li class="li-menu">
+            <a>
+                <span class="link-span">
+                    <span class="white-row"></span>
+                    <span class="link-title">Blog</span>
+                </span>
+            </a>
+        </li>
+    </ul>
 </div>

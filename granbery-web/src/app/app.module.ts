@@ -16,9 +16,11 @@ import { HamburgerIconComponent } from './menu/hamburger-icon/hamburger-icon.com
   imports: [
     BrowserModule,
     RouterModule
+    
   ],
   providers: [
     ChildrenOutletContexts
+    
   ],
   bootstrap: [AppComponent]
 })

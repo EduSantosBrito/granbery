@@ -7,9 +7,9 @@ import {ElementRef, Component, OnInit, HostBinding, Renderer2 } from "@angular/c
 })
 
 export class MenuComponent implements OnInit {
-
+    @HostBinding('style.left') movimentBar : string;
     private valueClick = true;
-    @HostBinding('style.height') height: Number;
+    @HostBinding('style.height') height: number;
 
     constructor(private render : Renderer2, private element : ElementRef){}
 
@@ -19,7 +19,7 @@ export class MenuComponent implements OnInit {
 
     openMenu() {
         this.valueClick = !this.valueClick;
-        this.render.addClass(this.element.nativeElement.querySelector("#hamburger"), "zindex-4")
+        this.render.addClass(this.element.nativeElement.querySelector("#hamburger"), "z-index-4")
     }
-    
+
 }
