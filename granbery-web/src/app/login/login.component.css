@@ -1,0 +1,32 @@
+/deep/html, body {
+    height: 100% !important;
+    background: url('../../assets/imagem-natureza-fundo.jpg') !important;
+}
+
+.login {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 15%;
+  padding: 20px 20px 20px;
+  width: 310px;
+  background: white;
+  border-radius: 3px;
+}
+
+h1 {
+    margin: -20px -20px 21px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    text-shadow: 0 1px white;
+    background: #f3f3f3;
+    border-bottom: 1px solid #cfcfcf;
+    border-radius: 3px 3px 0 0;
+}
+
+p { margin: 20px 0 0; }
+p:first-child { margin-top: 0; }
+
+input[type=text], input[type=password] { width: 278px; }
