@@ -5,25 +5,25 @@ import org.springframework.http.HttpStatus;
 public class GenericException {
 	
 	private String message;
-	private HttpStatus status;
-	private Integer statusCode;
+	private HttpStatus statusText;
+	private Integer status;
 	
-	public GenericException(HttpStatus status, String message) {
-		this.status = status;
+	public GenericException(HttpStatus statusText, String message) {
+		this.statusText = statusText;
 		this.message = message;
-		this.statusCode = status.value();
+		this.status = statusText.value();
 	}
 
 	public String getMessage() {
 		return message;
 	}
 
-	public HttpStatus getStatus() {
-		return status;
+	public HttpStatus getStatusText() {
+		return statusText;
 	}
 
-	public Integer getStatusCode() {
-		return statusCode;
+	public Integer getStatus() {
+		return status;
 	}
 	
 	

@@ -18,7 +18,7 @@ public class HttpInterceptor implements HandlerInterceptor{
 		if(user == null) {
 			throw new UnauthorizedException();
 		}
-		//TODO Lançar exception qnd o token for inválido
+		//TODO Criar atributo TIPO_USUARIO, para tipos de permissão (admin, criador de conteudo, etc.)
 		return true;
 	}
 	

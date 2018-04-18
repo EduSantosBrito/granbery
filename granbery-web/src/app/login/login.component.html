@@ -1,11 +1,17 @@
+<div *ngIf="showErrorMessage" id="errorBox" class="alert">
+  <span class="closebtn" (click)="hideErrorMessage()">&times;</span>
+  This is an alert box.
+</div> 
+
+
 <div class="container">
   <div class="login">
     <h1>Login</h1>
     <p>
-      <input type="text" class="text-input" name="login" value="" placeholder="Email">
+      <input type="text" class="text-input" name="login" value="" placeholder="Email" [(ngModel)]="user.email">
     </p>
     <p>
-      <input type="password" class="text-input" name="password" value="" placeholder="Senha">
+      <input type="password" class="text-input" name="password" value="" placeholder="Senha" [(ngModel)]="user.password">
     </p>
     <p>
       <label>
@@ -13,7 +19,7 @@
       </label>
     </p>
     <p>
-      <a class="button">Entrar</a>
+      <a class="button" (click)="login()">Entrar</a>
     </p>
   </div>
 </div>

@@ -16,6 +16,6 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 	}
 
 	private ResponseEntity<Object> buildResponseEntity(GenericException genericException) {
-		return new ResponseEntity<>(genericException, genericException.getStatus());
+		return new ResponseEntity<>(genericException, genericException.getStatusText());
 	}
 }
