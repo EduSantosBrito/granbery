@@ -1,0 +1,11 @@
+br\com\granberyconsultoria\api\service\UserService.class
+br\com\granberyconsultoria\api\exception\GenericException.class
+br\com\granberyconsultoria\api\exception\UnauthorizedException.class
+br\com\granberyconsultoria\api\exception\RestExceptionHandler.class
+br\com\granberyconsultoria\api\ApiApplication.class
+br\com\granberyconsultoria\api\repository\UserRepository.class
+br\com\granberyconsultoria\api\configuration\WebMvcConfig.class
+br\com\granberyconsultoria\api\controller\UserController.class
+br\com\granberyconsultoria\api\security\TokenAuthenticationService.class
+br\com\granberyconsultoria\api\security\HttpInterceptor.class
+br\com\granberyconsultoria\api\model\User.class
