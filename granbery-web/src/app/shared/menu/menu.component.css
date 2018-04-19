@@ -13,7 +13,7 @@
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-49%, -50%);
     color: white;
 }
 
@@ -186,7 +186,7 @@ svg {
 }
 
 .right {
-    left: 49%;
+    left: 50%;
     transform: rotate(90deg);
 }
 

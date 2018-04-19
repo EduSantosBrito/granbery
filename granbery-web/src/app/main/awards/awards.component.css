@@ -1,0 +1,41 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-right .description {
+    margin-left: 20%;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+}
+.carousel-right .month-year{
+    margin-left: 20%;
+    text-align: right;
+    width: 200px;
+    font-size: 20px;
+}
+.carousel-left .blue {
+    content: "";
+    height: 50px;
+    background-color: blue;
+}
+.carousel-left .yellow {
+    margin-top: -20px;
+    content: "";
+    height: 50px;
+    background-color: yellow;
+}
+
+.carousel-left .blue {
+    transform: width 1s;
+}
+
+.carousel-left .yellow {
+    transform: width 1s;
+}

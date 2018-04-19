@@ -25,6 +25,8 @@ export class LoginComponent implements OnInit {
     this.loginService.login(this.user).subscribe(response => {
       this.messageSuccess = "Login efetuado com sucesso.";
       this.displaySuccessBox = true;
+      //TO-DO INSERÇÃO DO TOKEN NO LOCALSTORAGE + PEGAR O LOCALSTORAGE
+      //EM CADA REQUISIÇÃO QUE PRECISE DE PERMISSÃO PARA VALIDAR
     },
     error => {
       error = error.json();

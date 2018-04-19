@@ -1,0 +1,14 @@
+<div *ngFor="let item of items;" class="carousel col xs-offset-1 xs-col-10">
+    <div class="carousel-right col xs-col-6">
+        <p class="description">{{item.description}}</p>
+        <div class="month-year">
+            <p class="month">{{item.month}} <span class="year">{{item.year}}</span></p>
+        </div>
+    </div>
+    <div class="carousel-left col xs-col-6">
+        <div id="blue" class="blue col xs-col-10"></div>
+        <div id="yellow" class="yellow col xs-offset-1 xs-col-9"></div>
+    </div>
+    <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+    <a class="next" (click)="plusSlides(1)">&#10095;</a>
+</div>
