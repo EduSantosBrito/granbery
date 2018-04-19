@@ -11,7 +11,9 @@ export class LoginComponent implements OnInit {
 
   public user: User = new User();
   public messageError: string = "";
-  public showErrorMessage: boolean = false;
+  public displayErrorBox: boolean = false;
+  public messageSuccess: string = "";
+  public displaySuccessBox: boolean = false;
 
   constructor(private loginService: LoginService,
     private elementRef: ElementRef) { }
@@ -21,19 +23,20 @@ export class LoginComponent implements OnInit {
 
   public login() {
     this.loginService.login(this.user).subscribe(response => {
+      this.messageSuccess = "Login efetuado com sucesso.";
+      this.displaySuccessBox = true;
     },
-      error => {
-        error = error.json();
-        this.messageError = error.message;
-        this.showErrorMessage = true;
-      })
+    error => {
+      error = error.json();
+      this.messageError = error.message;
+      this.displayErrorBox = true;
+    })
   }
 
-  public hideErrorMessage() {
-    let element = this.elementRef.nativeElement.querySelector('#errorBox');
-    element.style.opacity = 0;
-    setTimeout(function () {
-      this.showErrorMessage = false;
-    }, 600);
+  public toogleDisplaySuccesBoxFalse(event) {
+    this.displaySuccessBox = false;
+  }
+  public toogleDisplayErrorBoxFalse(event) {
+    this.displayErrorBox = false;
   }
 }

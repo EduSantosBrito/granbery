@@ -1,9 +1,13 @@
-<div *ngIf="showErrorMessage" id="errorBox" class="alert">
-  <span class="closebtn" (click)="hideErrorMessage()">&times;</span>
-  This is an alert box.
-</div> 
-
-
+<error-box 
+  [message]="messageError" 
+  [show]="displayErrorBox" 
+  (close)="toogleDisplayErrorBoxFalse($event)">
+</error-box>
+<success-box 
+  [message]="messageSuccess" 
+  [show]="displaySuccessBox" 
+  (close)="toogleDisplaySuccesBoxFalse($event)">
+</success-box>
 <div class="container">
   <div class="login">
     <h1>Login</h1>

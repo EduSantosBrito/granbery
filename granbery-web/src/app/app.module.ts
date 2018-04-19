@@ -21,7 +21,7 @@ import { MainComponent } from './main/main.component';
     routing,
     NotFoundModule,
     MainModule,
-    LoginModule
+    LoginModule,
   ],
   providers: [
   ],
