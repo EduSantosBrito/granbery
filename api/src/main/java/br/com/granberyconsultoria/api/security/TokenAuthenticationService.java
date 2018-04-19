@@ -12,9 +12,9 @@ public class TokenAuthenticationService {
 	static final String SECRET = "MySecret";
 	static final String HEADER_STRING = "Authorization";
 	
-	public static String addAuthentication(String username) {
+	public static String addAuthentication(String permissionType) {
 		return Jwts.builder()
-				.setSubject(username)
+				.setSubject(permissionType)
 				.setExpiration(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
 				.signWith(SignatureAlgorithm.HS512, SECRET)
 				.compact();

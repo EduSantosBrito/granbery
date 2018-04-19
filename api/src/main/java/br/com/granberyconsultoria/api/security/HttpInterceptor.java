@@ -14,11 +14,10 @@ public class HttpInterceptor implements HandlerInterceptor{
 	
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object object) throws Exception {
-		String user = TokenAuthenticationService.getAuthentication(request);
-		if(user == null) {
+		String permissionType = TokenAuthenticationService.getAuthentication(request);
+		if(permissionType == null || Integer.getInteger(permissionType) != 1) {
 			throw new UnauthorizedException();
 		}
-		//TODO Criar atributo TIPO_USUARIO, para tipos de permissão (admin, criador de conteudo, etc.)
 		return true;
 	}
 	

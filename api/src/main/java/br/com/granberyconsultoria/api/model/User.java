@@ -20,6 +20,12 @@ public class User {
 
 	@Column(name="PASSWORD")
 	private String password;
+	
+	@Column(name="PERMISSION_TYPE")
+	private Integer permissionType;
+	
+	@Column(name="IS_ACTIVE")
+	private Boolean isActive;
 
 	public String getEmail() {
 		return email;
@@ -44,5 +50,23 @@ public class User {
 	public void setId(Long id) {
 		this.id = id;
 	}
+
+	public Integer getPermissionType() {
+		return permissionType;
+	}
+
+	public void setPermissionType(Integer permissionType) {
+		this.permissionType = permissionType;
+	}
+
+	public Boolean isActive() {
+		return isActive;
+	}
+
+	public void setActive(Boolean active) {
+		this.isActive = active;
+	}
+	
+	
 
 }
