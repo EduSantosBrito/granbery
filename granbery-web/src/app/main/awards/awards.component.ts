@@ -19,7 +19,12 @@ export class AwardsComponent implements OnInit {
         item2.description = "lal";
         item2.month = "maio";
         item2.year = 2018;
+        let item3 : Awards = new Awards();
+        item3.description = "lal2";
+        item3.month = "maio";
+        item3.year = 2018;
         this.items.push(item);
         this.items.push(item2);
+        this.items.push(item3);
     }
 }
