@@ -15,7 +15,7 @@ public class HttpInterceptor implements HandlerInterceptor{
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object object) throws Exception {
 		String permissionType = TokenAuthenticationService.getAuthentication(request);
-		if(permissionType == null || Integer.getInteger(permissionType) != 1) {
+		if(permissionType == null || !permissionType.equals("1")) {
 			throw new UnauthorizedException();
 		}
 		return true;

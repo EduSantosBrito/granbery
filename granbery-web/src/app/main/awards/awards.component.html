@@ -1,4 +1,27 @@
 <div class="container">
     <h1 class="xs-text-1">Conquistas</h1>
-    <carousel [items]="items"></carousel>
+    <div class="swiper-container" [swiper]="config" [(index)]="index">
+          
+        <div class="parallax-bg" style="background-color: red !important" data-swiper-parallax="-23%"></div>
+        <div class="swiper-wrapper">
+            <div *ngFor="let item of items" class="swiper-slide">
+                <div class="title" data-swiper-parallax="-100">Slide 1</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+                    <p>Lorem ipsum dolor sit amet, ...</p>
+                </div>
+                <!-- Opacity parallax -->
+                <div data-swiper-parallax-opacity="0.5">I will change opacity</div>
+                <!-- Scale parallax -->
+                <div data-swiper-parallax-scale="0.15">I will change scale</div>
+                <!-- <p class="description">{{item.description}}</p>
+                <div class="month-year">
+                    <p class="month">{{item.month}}
+                        <span class="year">{{item.year}}</span>
+                    </p>
+                </div> -->
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
 </div>

@@ -1,4 +1,3 @@
-import { CarouselComponent } from './../../shared/carousel/carousel.component';
 import { AwardsComponent } from './../../main/awards/awards.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -9,16 +8,38 @@ import { MenuModule } from '../shared/menu.module';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SwiperModule } from 'ngx-swiper-wrapper';
+import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+
+const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
+  parallax: true,
+  direction: 'horizontal',
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+  autoplay: {
+    delay: 3000,
+  }, 
+};
+
 @NgModule({
   imports: [
     CommonModule,
     MenuModule,
     FormsModule,
+    SwiperModule
   ],
   declarations: [
     MainComponent,
     AwardsComponent,
-    CarouselComponent
+  ],
+  providers: [
+    {
+      provide: SWIPER_CONFIG,
+      useValue: DEFAULT_SWIPER_CONFIG
+    }
   ]
 })
 export class MainModule { }

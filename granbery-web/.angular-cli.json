@@ -21,9 +21,12 @@
       "styles": [
         "styles.css",
         "../node_modules/bf-solid/dist/solid.2.10.6.min.css",
-        "../node_modules/font-awesome/css/font-awesome.min.css"
+        "../node_modules/font-awesome/css/font-awesome.min.css",
+        "../node_modules/swiper/dist/css/swiper.min.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/swiper/dist/js/swiper.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

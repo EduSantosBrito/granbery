@@ -1,7 +1,7 @@
 /* Hero-image creation */
 
 .hero-image {
-    background-image: url("../../../assets/hero-image.jpg");
+    background-image: url("../../../assets/hero-image.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
