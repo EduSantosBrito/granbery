@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { HamburgerIconComponent } from './../../shared/menu/hamburger-icon/hamburger-icon.component';
 import { NgModule } from '@angular/core';
 import { MenuComponent } from '../../shared/menu/menu.component';
@@ -10,7 +11,8 @@ import { CommonModule } from '@angular/common';
         HamburgerIconComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        RouterModule
     ],
     exports: [
         MenuComponent,

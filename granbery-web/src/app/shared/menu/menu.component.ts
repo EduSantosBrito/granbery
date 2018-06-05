@@ -1,4 +1,5 @@
-import {ElementRef, Component, OnInit, HostBinding, Renderer2 } from "@angular/core";
+import { ElementRef, Component, OnInit, HostBinding, Renderer2 } from "@angular/core";
+import { RouterModule } from "@angular/router";
 
 @Component({
     selector: 'menu',

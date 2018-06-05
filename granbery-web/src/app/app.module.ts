@@ -9,6 +9,7 @@ import { HamburgerIconComponent } from './shared/menu/hamburger-icon/hamburger-i
 import { MainModule } from './modules/main/main.module';
 import { LoginModule } from './modules/login/login.module';
 import { MainComponent } from './main/main.component';
+import { InstitucionalModule } from './modules/institucional/institucional.module';
 
 
 
@@ -22,6 +23,7 @@ import { MainComponent } from './main/main.component';
     NotFoundModule,
     MainModule,
     LoginModule,
+    InstitucionalModule
   ],
   providers: [
   ],
