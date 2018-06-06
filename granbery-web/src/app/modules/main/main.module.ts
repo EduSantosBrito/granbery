@@ -18,10 +18,12 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: true,
+    clickable: true
   },
-  autoplay: {
-    delay: 3000,
-  }, 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 };
 
 @NgModule({

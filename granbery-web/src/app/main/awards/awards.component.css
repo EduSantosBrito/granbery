@@ -6,17 +6,39 @@
 .container h1 {
     text-align: center;
     padding: 20px;
+    color: white;
+}
+.swiper-slide {
+    font-size: 18px;
+    color: white;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+  }
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-color: #1f3a93;
+}
+.container {
+    background-color: #1f3a93;
 }
 
-.description {
-    margin-left: 20%;
-    text-align: center;
-    width: 200px;
-    font-size: 20px;
-}
-.month-year{
-    margin-left: 20%;
-    text-align: right;
-    width: 200px;
-    font-size: 20px;
-}
+.swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+  }
+  .swiper-slide .subtitle {
+    font-size: 21px;
+  }
+  .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  }
