@@ -5,20 +5,25 @@
         </div>
         <div class="swiper-wrapper">
             <div *ngFor="let item of items" class="swiper-slide">
-                <div class="month-year title" data-swiper-parallax="-300">
-                    <p>{{item.month}}
-                        <span>{{item.year}}</span>
-                    </p>
+                <div class="col xs-col-12">
+                    <img class="image-awards" src="../../../assets/icon_premio.png">
                 </div>
-                <div class="text" data-swiper-parallax="-100">
-                    <p>{{item.description}}</p>
+                <div class="col xs-col-12">
+                    <div class="month-year title" data-swiper-parallax="-300">
+                        <p>{{item.month}}
+                            <span>{{item.year}}</span>
+                        </p>
+                    </div>
+                    <div class="text" data-swiper-parallax="-100">
+                        <p>{{item.description}}</p>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination swiper-pagination-white"></div>
+        <div class="swiper-pagination "></div>
         <!-- Add Navigation -->
-        <div class="swiper-button-prev swiper-button-white"></div>
-        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev "></div>
+        <div class="swiper-button-next "></div>
     </div>
 </div>

@@ -2,43 +2,45 @@
     position: relative;
     margin: 0 auto;
 }
-
 .container h1 {
     text-align: center;
     padding: 20px;
-    color: white;
+    color: black;
 }
 .swiper-slide {
     font-size: 18px;
-    color: white;
+    color: black;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 40px 60px;
-  }
-.parallax-bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 130%;
-    height: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-color: #1f3a93;
 }
-.container {
-    background-color: #1f3a93;
-}
-
 .swiper-slide .title {
+    text-align: center;
     font-size: 41px;
     font-weight: 300;
-  }
-  .swiper-slide .subtitle {
-    font-size: 21px;
-  }
-  .swiper-slide .text {
+}
+.swiper-slide .text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     font-size: 14px;
     max-width: 400px;
     line-height: 1.3;
-  }
+}
+.image-awards {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+@media screen and (max-width: 576px) {
+    .image-awards {
+        width: 50%;
+    }
+    .swiper-slide .title {
+        font-size: 25px;
+    }
+    .swiper-slide .text {
+        font-size: 12px;
+    }
+}

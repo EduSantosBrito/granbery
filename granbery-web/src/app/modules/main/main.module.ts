@@ -24,6 +24,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  speed: 400
 };
 
 @NgModule({
