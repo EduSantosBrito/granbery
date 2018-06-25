@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { ServiceComponent } from '../../main/services/services.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   parallax: true,
@@ -37,6 +38,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   declarations: [
     MainComponent,
     AwardsComponent,
+    ServiceComponent
   ],
   providers: [
     {

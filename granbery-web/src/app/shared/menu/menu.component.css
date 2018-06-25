@@ -64,6 +64,13 @@
 .img-responsive {
     margin: 0 auto;
     display: block;
+    width: 120px;
+}
+
+@media only screen and (max-width: 425px){
+    .img-responsive{
+        width: 80px;
+    }
 }
 
 .z-index-4 {

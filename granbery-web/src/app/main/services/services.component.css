@@ -1,0 +1,77 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+}
+.container h1 {
+    text-align: center;
+    padding: 20px;
+    color: black;
+} 
+
+.serviceBox{
+    padding: 35px 20px 25px;
+    border: 1px solid #f4f4f4;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    height: 350px;
+}
+.serviceBox:hover{ border-color: #1f3a93 ; }
+.serviceBox:before{
+    content: "";
+    border-top: 20px solid #f7f7f7;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover:before{ border-top-color: #1f3a93 ; }
+.serviceBox .service-icon{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    color: #1f3a93;
+    margin-bottom: 35px;
+    z-index: 1;
+    position: relative;
+    transition:all 0.3s ease 0s;
+}
+.serviceBox:hover .service-icon{ color: #fff; }
+.serviceBox .service-icon:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(45deg);
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover .service-icon:before{
+    border-color: #1f3a93 ;
+    background: #1f3a93 ;
+}
+.serviceBox .title{
+    font-size: 20px;
+    font-weight: 500 !important;
+    color: #1f3a93;
+    text-transform: capitalize;
+    margin: 0 0 15px 0;
+}
+.serviceBox .description{
+    font-size: 15px;
+    color: black;
+    line-height: 27px;
+    margin: 0;
+    text-align: center;
+}
+@media only screen and (max-width:990px){
+    .serviceBox{ margin-bottom: 30px; }
+}
