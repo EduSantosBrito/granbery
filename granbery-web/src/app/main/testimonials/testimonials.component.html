@@ -2,20 +2,19 @@
     <h1 class="xs-text-1">Depoimentos</h1>
     <div class="swiper-container" [swiper]="config" [(index)]="index">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div *ngFor="let depoimento of depoimentos" class="swiper-slide">
                 <div class="col xs-col-12">
-                    <img class="image-awards" src="../../../assets/icon_premio.png">
+                    <img class="image-testimonial" src="{{depoimento.caminhoFoto}}">
                 </div>
                 <div class="col xs-col-12">
                     <div class="month-year title" data-swiper-parallax="-300">
-                        <p>Nome
-                            <span>Cargo</span>
-                        </p>
+                        <p>{{depoimento.nome}}</p>
+                    </div>
+                    <div class="cargo" data-swiper-parallax="-200">
+                        <p>{{depoimento.cargo}}</p>
                     </div>
                     <div class="text" data-swiper-parallax="-100">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis alias libero, laborum quos ea ex
-                            accusamus qui excepturi eveniet quibusdam, ad corrupti cum, consectetur dignissimos? Magni aliquid
-                            expedita dignissimos quos.</p>
+                        <p>{{depoimento.texto}}</p>
                     </div>
                 </div>
             </div>

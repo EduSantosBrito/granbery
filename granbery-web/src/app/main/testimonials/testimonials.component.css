@@ -27,11 +27,12 @@
     max-width: 400px;
     line-height: 1.3;
 }
-.image-awards {
+.image-testimonial {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 10%;
+    border-radius: 50%;
 }
 .swiper-container {
     background: url("../../../assets/testimonial.jpg") !important;
@@ -39,8 +40,16 @@
     background-position: 50% 70% !important;
     background-size: cover !important;
 }
+.cargo{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 400px;
+    line-height: 1.5;
+    font-size: 18px;
+}
 @media screen and (max-width: 576px) {
-    .image-awards {
+    .image-testimonial {
         width: 50%;
     }
     .swiper-slide .title {
