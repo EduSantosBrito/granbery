@@ -1,3 +1,4 @@
+import { FooterModule } from './../shared/footer.module';
 import { AwardsComponent } from './../../main/awards/awards.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -29,7 +30,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     CommonModule,
     MenuModule,
     FormsModule,
-    SwiperModule
+    SwiperModule,
+    FooterModule
   ],
   declarations: [
     MainComponent,

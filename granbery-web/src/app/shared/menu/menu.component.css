@@ -48,14 +48,14 @@
 /* Ativar/Inativar menu */
 
 .active {
-    background-color: #0072bc;
+    background-color: #1f3a93;
     width: 100%;
     -webkit-transition: width 1s;
     transition: width 1s;
 }
 
 .inactive {
-    background-color: #0072bc;
+    background-color: #1f3a93;
     width: 0%;
     -webkit-transition: width 1s;
     transition: width 1s;
