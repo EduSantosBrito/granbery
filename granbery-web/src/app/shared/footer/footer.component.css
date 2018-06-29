@@ -1,3 +1,12 @@
-footer {
-    background-color: #1f3a93 ;
+.copyright {
+    min-height: 40px;
+    background-color: #1f3a93;
+}
+
+.copyright p {
+    text-align: center;
+    font-size: 16px;    
+    color: #FFF;
+    padding: 10px 0;
+    margin-bottom: 0px;
 }

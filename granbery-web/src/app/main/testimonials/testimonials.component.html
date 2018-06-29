@@ -1,12 +1,12 @@
-<div class="container">
-    <h1 class="xs-text-1">Depoimentos</h1>
+<div class="container-box">
+    <h1 class="text-center">Depoimentos</h1>
     <div class="swiper-container" [swiper]="config" [(index)]="index">
         <div class="swiper-wrapper">
             <div *ngFor="let depoimento of depoimentos" class="swiper-slide">
-                <div class="col xs-col-12">
+                <div class="col col-xs-12">
                     <img class="image-testimonial" src="{{depoimento.caminhoFoto}}">
                 </div>
-                <div class="col xs-col-12">
+                <div class="col col-xs-12">
                     <div class="month-year title" data-swiper-parallax="-300">
                         <p>{{depoimento.nome}}</p>
                     </div>
