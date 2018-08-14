@@ -1,4 +1,4 @@
-<div class="container-box">
+<div class="container-box" id="awards">
     <h1 class="text-center">Conquistas</h1>
     <div class="swiper-container" [swiper]="config" [(index)]="index">
         <div class="parallax-bg" data-swiper-parallax="-23%">
@@ -10,9 +10,7 @@
                 </div>
                 <div class="col xs-col-12">
                     <div class="month-year title" data-swiper-parallax="-300">
-                        <p>{{item.month}}
-                            <span>{{item.year}}</span>
-                        </p>
+                        <span>{{item.year}}</span>
                     </div>
                     <div class="text" data-swiper-parallax="-100">
                         <p>{{item.description}}</p>
